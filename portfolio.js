@@ -1,16 +1,43 @@
-const daysInAYear = 365.25;
-let age = 40
-let lifeTime = 100
+const MS_PER_DAY = 1000 * 60 * 60 * 24;
 
-const daysLeft = (num) => {
-    return Math.floor((lifeTime - age)*daysInAYear)
-};
+function getDaysLeftUntilAge(birthDate, targetAge = 100) {
+  const today = new Date();
+  const targetDate = new Date(birthDate);
+  targetDate.setFullYear(birthDate.getFullYear() + targetAge);
 
-console.log(daysLeft());
+  return Math.max(0, Math.ceil((targetDate - today) / MS_PER_DAY));
+}
 
-const codeStart = new Date("2025-06-01");
+function getDaysCoding(startDate) {
+  const today = new Date();
+  return Math.max(0, Math.floor((today - startDate) / MS_PER_DAY));
+}
 
-let daysCoding = (new Date) - codeStart;
-daysCoding = Math.floor(daysCoding / (1000 * 60 * 60 * 24));
 
-console.log(daysCoding);
+const birthday = new Date(1985, 10, 6);
+const codeStart = new Date(2025, 6, 1);
+
+const daysLeft = getDaysLeftUntilAge(birthday, 100);
+const daysCoding = getDaysCoding(codeStart);
+
+
+document.getElementById("days-left").textContent = daysLeft.toLocaleString();
+document.getElementById("days-coding").textContent = daysCoding;
+
+function initRevealOnScroll() {
+    const elements = document.querySelectorAll('.fade-up');
+  
+    elements.forEach(el => el.classList.add('animate'));
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+  
+    elements.forEach((el) => observer.observe(el));
+  }
