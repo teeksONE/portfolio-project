@@ -64,12 +64,12 @@
   
   .tklogo-title {
     font-family: "Coda", system-ui;
-    color: #83fff5;
+    color: #69c;
   }
   
   .tklogo-left {
     color: #b3ccff;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   
   .nav-links ul {
@@ -80,6 +80,7 @@
   .nav-links a {
     color: #d9e2f2;
     transition: color 0.25s ease;
+    font-size: 1.1rem;
   }
   
   .nav-links a:hover,
@@ -102,6 +103,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.2rem;
   }
   
   .java-factory,
