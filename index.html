@@ -4,276 +4,506 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="resources/css/portfolio.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Tim Kelly | Full-Stack Web Developer</title>
+  <meta name="description" content="Tim Kelly is a full-stack web developer based in Paddington, Brisbane. He builds web, desktop and mobile products end to end, from the interface to the API and database behind it." />
+
+  <meta property="og:title" content="Tim Kelly | Full-Stack Web Developer" />
+  <meta property="og:description" content="Full-stack web developer based in Paddington, Brisbane. Web, desktop and mobile products built end to end." />
+  <meta property="og:image" content="https://teeksone.github.io/Portfolio-Project/resources/images/head.jpg" />
+  <meta property="og:url" content="https://teeksone.github.io/Portfolio-Project/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="icon" type="image/jpeg" href="resources/images/tk-fly.jpeg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=League+Spartan:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
-
-  <title>Tim Kelly | Portfolio</title>
-
-<meta name="description" content="Tim Kelly — Australian full-stack developer based in Whistler, BC. Building React, TypeScript and Tauri projects. Carpenter turned coder." />
-
-<meta property="og:title" content="Tim Kelly | Portfolio" />
-<meta property="og:description" content="Australian full-stack developer based in Whistler, BC. Building React, TypeScript and Tauri projects." />
-<meta property="og:image" content="https://teeksone.github.io/Portfolio-Project/resources/images/head.jpg" />
-<meta property="og:url" content="https://teeksone.github.io/Portfolio-Project/" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<link rel="icon" type="image/jpeg" href="resources/images/tk-fly.jpeg" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="resources/css/portfolio.css" />
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="tklogo">
-        <img src="resources/images/tk-fly.jpeg" alt="tksONE logo" width="70" height="70" />
-        <h3 class="tklogo-title">Tim Kelly</h3>
-      </div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-      <div class="nav-links">
-        <ul>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <a class="tklogo" href="#top" aria-label="Tim Kelly, back to top">
+        <img src="resources/images/tk-fly.jpeg" alt="" width="44" height="44" />
+        <span class="tklogo-title">Tim Kelly</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#approach">Approach</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
 
-      <div class="nav-socials">
-        <a href="https://github.com/teeksONE" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/tim-kelly-299476282/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
+        <div class="nav-socials">
+          <a href="https://github.com/teeksONE" target="_blank" rel="noopener noreferrer" aria-label="Tim Kelly on GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/tim-kelly-299476282/" target="_blank" rel="noopener noreferrer" aria-label="Tim Kelly on LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:teeksone.bne@gmail.com" aria-label="Email Tim Kelly">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main id="home">
+  <main id="main">
 
-    <section class="inspo-quote">
-      <img src="resources/images/moonscape.png" alt="Inspiration quote background" width="100%" height="550" />
-      <p>
-        <strong>Alan Watts:</strong>
-        <i>"You are an aperture through which the universe is looking at and exploring itself."</i>
-      </p>
-    </section>
-
-    <section class="java-factory fade-up">
-      <div class="javaaboutme">
-
-        <p>
-          <span class="line-number">1</span>
-          <span class="code">
-            <span class="code-blue">class</span> <span class="code-yellow">Human</span> <span class="code-white">{</span>
-          </span>
+    <section class="hero" id="top">
+      <img class="hero-bg" src="resources/images/hero.jpg" alt="" width="1920" height="1000" />
+      <div class="hero-inner">
+        <p class="eyebrow">Full-Stack Web Developer <span aria-hidden="true">·</span> Paddington, Brisbane</p>
+        <h1>I build digital products end to end, from the screen people use to the systems behind it.</h1>
+        <p class="hero-lede">
+          I'm Tim Kelly. I've designed, built and shipped work for the web, the desktop and the iPhone,
+          including the booking and payments platform that runs my own campervan rental business.
         </p>
-
-        <p>
-          <span class="line-number">2</span>
-          <span class="code indent-1">
-            <span class="code-cyan">constructor</span><span class="code-white">(fullStack)</span> <span class="code-purple">{</span>
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">3</span>
-          <span class="code indent-2">
-            <span class="code-cyan">_name</span> <span class="code-white">=</span> <span class="code-yellow">'Tim Kelly'</span>;
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">4</span>
-          <span class="code indent-2">
-            <span class="code-cyan">_age</span> <span class="code-white">=</span> <span class="code-orange">40</span>;
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">5</span>
-          <span class="code indent-2">
-            <span class="code-cyan">_location</span> <span class="code-white">=</span> <span class="code-yellow">'Whistler, BC'</span>;
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">6</span>
-          <span class="code indent-2">
-            <span class="code-cyan">_hobbies</span> <span class="code-white">=</span>
-            <span class="code-purple">[</span>
-            <span class="code-yellow">'Snowboarding', 'Skiing', 'Surfing', 'Photography'</span>
-            <span class="code-purple">]</span>;
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">7</span>
-          <span class="code indent-2">
-            <span class="code-cyan">_daysUntil100</span> <span class="code-white">=</span> <span id="days-left"></span>;
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">8</span>
-          <span class="code indent-2">
-            <span class="code-cyan">_daysCoding</span> <span class="code-white">=</span> <span id="days-coding"></span>;
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">9</span>
-          <span class="code indent-1">
-            <span class="code-purple">}</span>
-          </span>
-        </p>
-
-        <p>
-          <span class="line-number">10</span>
-          <span class="code">
-            <span class="code-white">};</span>
-          </span>
-        </p>
-
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">See my work</a>
+          <a class="btn btn-ghost" href="mailto:teeksone.bne@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Email me</a>
+          <a class="btn btn-ghost" href="https://github.com/teeksONE" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+        <blockquote class="hero-quote">
+          <p>“You are an aperture through which the universe is looking at and exploring itself.”</p>
+          <cite>Alan Watts</cite>
+        </blockquote>
       </div>
     </section>
 
-    <section id="about" class="about-section fade-up">
-      <div id="aboutme-container">
-        <div class="aboutme">
-          <div class="aboutme-text">
-            <div class="aboutme-title">
-              <h2>About Me</h2>
-              <div class="line"></div>
+    <section class="highlights" aria-label="At a glance">
+      <ul class="highlights-grid">
+        <li>
+          <strong>4</strong>
+          <span>products designed and built from first sketch to working software</span>
+        </li>
+        <li>
+          <strong>3</strong>
+          <span>platforms covered: web, Mac desktop and iPhone</span>
+        </li>
+        <li>
+          <strong>Live</strong>
+          <span>booking site in production, with online card payments</span>
+        </li>
+        <li>
+          <strong>Full stack</strong>
+          <span>interface, API, database, security and deployment</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="work" class="section fade-up">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects I've built</h2>
+        <p class="section-intro">
+          Four products, each solving a real problem for real people. Every one was planned, designed and built by me.
+        </p>
+      </div>
+
+      <article class="feature-card">
+        <div class="feature-media">
+          <img src="resources/images/projects/vanture-campers.jpg" alt="A Vanture Campers van driving towards snow-capped mountains" width="998" height="948" loading="lazy" />
+        </div>
+        <div class="feature-body">
+          <p class="project-status"><span class="status-dot" aria-hidden="true"></span>Live business <span aria-hidden="true">·</span> Full-stack web platform</p>
+          <h3>Vanture Campers</h3>
+          <p class="project-summary">
+            The booking platform behind my campervan rental business. Customers check live availability,
+            build their trip, pay a deposit by card and receive an invoice by email, all without a phone call.
+            Behind the scenes, a secure staff dashboard runs the whole operation.
+          </p>
+          <ul class="project-points">
+            <li>Online booking with real-time availability, optional extras and promo codes</li>
+            <li>Card payments through Stripe, with PDF invoices and confirmation emails sent automatically</li>
+            <li>Staff dashboard behind two-factor login: bookings, calendar, blocked dates and monthly tax reports</li>
+            <li>Separate website and API, protected by rate limiting, input validation and verified payment notifications</li>
+          </ul>
+          <ul class="tech-list" aria-label="Technology used">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
+            <li>Supabase</li>
+            <li>Stripe</li>
+            <li>REST API</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn btn-primary" href="https://vanturecampers.com/" target="_blank" rel="noopener noreferrer">Visit the live site <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="https://github.com/teeksONE/vanture-campers" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> View code</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <img class="project-icon" src="resources/images/projects/stretch-desk.png" alt="" width="64" height="64" loading="lazy" />
+            <div>
+              <p class="project-status">Mac app <span aria-hidden="true">·</span> Version 1.0</p>
+              <h3>Stretch Desk</h3>
             </div>
-
-            <p class="aboutme-blurb">
-              Timothy Kelly, holding a Masters in International Law, Professional Certificate Full Stack Engineer.
-              An Australian living abroad in Whistler, BC, I have been working as a carpenter for the last 5 years and decided
-              I wanted a new challenge.
-            </p>
-
-            <p class="aboutme-blurb">
-              I’m passionate about lifelong learning. I’m fascinated by the mysteries of space, the diversity of the human
-              experience, and living a full life outdoors.
-            </p>
-
-            <p class="aboutme-blurb">
-              I’m excited to build a completely new skill set. Coding feels different from carpentry, but also similar:
-              both are about solving problems in creative ways and designing something real, functional and useful.
-            </p>
           </div>
-
-          <div class="aboutme-image">
-            <img src="resources/images/head.jpg" alt="Portrait of Tim Kelly" width="300" height="400" />
+          <p class="project-summary">
+            A break timer for desk workers that actually gets you moving. When work time is up it takes over
+            the screen with a guided routine of stretches, strength, movement or meditation, tailored to your
+            body, skill level and workspace.
+          </p>
+          <ul class="project-points">
+            <li>Builds each routine on the fly from a library of 258 expert-tagged movements</li>
+            <li>Progress dashboard with streaks, weekly breaks and minutes moved</li>
+            <li>Runs quietly from the menu bar and starts with your Mac</li>
+          </ul>
+          <ul class="tech-list" aria-label="Technology used">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Tauri (Rust)</li>
+            <li>Tailwind CSS</li>
+            <li>Zustand</li>
+          </ul>
+          <div class="project-links">
+            <a class="text-link" href="https://github.com/teeksONE/stretch-desk" target="_blank" rel="noopener noreferrer">View code on GitHub <span class="arrow" aria-hidden="true">&rarr;</span></a>
           </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <img class="project-icon" src="resources/images/projects/centenarian.png" alt="" width="64" height="64" loading="lazy" />
+            <div>
+              <p class="project-status">iPhone app <span aria-hidden="true">·</span> In progress</p>
+              <h3>Centenarian Habit Tracker</h3>
+            </div>
+          </div>
+          <p class="project-summary">
+            A habit tracker with one goal: help you reach 100. It pairs 24 research-backed longevity habits
+            with daily check-offs, a Longevity Score and plain-language summaries of what is working and
+            what to build on next.
+          </p>
+          <ul class="project-points">
+            <li>Longevity Score and “lifestyle age” estimate, calculated privately on the device</li>
+            <li>Learning hub of talks, podcasts and open-access studies, with offline reading</li>
+            <li>Core logic covered by 72 automated checks, with no third-party code</li>
+          </ul>
+          <ul class="tech-list" aria-label="Technology used">
+            <li>Swift</li>
+            <li>SwiftUI</li>
+            <li>iOS 17</li>
+            <li>Local notifications</li>
+          </ul>
+          <div class="project-links">
+            <span class="project-note">Private while in development. Walkthrough on request.</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <div class="project-icon project-icon-dot" aria-hidden="true"></div>
+            <div>
+              <p class="project-status">Web app <span aria-hidden="true">·</span> In progress</p>
+              <h3>Pale Blue Dot</h3>
+            </div>
+          </div>
+          <p class="project-summary">
+            A calmer way to read the internet's “Ask” communities, built on the idea that we have more in
+            common than we don't. It gathers live conversations from 21 communities across countries,
+            cultures and faiths, alongside a daily long-form question.
+          </p>
+          <ul class="project-points">
+            <li>Live content pulled from Reddit's API on the server, then cached for speed</li>
+            <li>Fast, search-friendly pages with a strict security policy</li>
+            <li>No accounts, no cookies, no tracking</li>
+          </ul>
+          <ul class="tech-list" aria-label="Technology used">
+            <li>Next.js</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>MDX</li>
+            <li>REST API</li>
+          </ul>
+          <div class="project-links">
+            <a class="text-link" href="https://github.com/teeksONE/sub-creddit-app" target="_blank" rel="noopener noreferrer">View the original prototype <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="earlier-work">
+        <h3>Earlier work</h3>
+        <ul>
+          <li>
+            <div>
+              <strong>Sober Mindset</strong>
+              <span>A passion project offering practical, healthy content for people wanting to let go of unhelpful behaviours.</span>
+            </div>
+            <a class="text-link" href="https://github.com/teeksONE/Sober-Mindset" target="_blank" rel="noopener noreferrer" aria-label="Sober Mindset on GitHub">GitHub <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </li>
+          <li>
+            <div>
+              <strong>Sub-Creddit</strong>
+              <span>A Reddit-style reader with a curated feed and “Ask” communities from around the world. The prototype that grew into Pale Blue Dot.</span>
+            </div>
+            <a class="text-link" href="https://github.com/teeksONE/sub-creddit-app" target="_blank" rel="noopener noreferrer" aria-label="Sub-Creddit on GitHub">GitHub <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="approach" class="section fade-up">
+      <div class="section-head">
+        <p class="eyebrow">How I work</p>
+        <h2>What I bring to a team</h2>
+      </div>
+
+      <div class="approach-grid">
+        <div class="approach-card">
+          <i class="fas fa-layer-group" aria-hidden="true"></i>
+          <h3>The whole stack</h3>
+          <p>
+            I work from the user interface through to the API, database and deployment.
+            Vanture Campers is all of those, built and run by one person.
+          </p>
+        </div>
+        <div class="approach-card">
+          <i class="fas fa-plug" aria-hidden="true"></i>
+          <h3>Connected systems</h3>
+          <p>
+            Payments, email, sign-in and third-party data, joined together through well-defined APIs,
+            with validation and security built in from the start.
+          </p>
+        </div>
+        <div class="approach-card">
+          <i class="fas fa-universal-access" aria-hidden="true"></i>
+          <h3>Built for everyone</h3>
+          <p>
+            Clear layouts that work on any screen, with keyboard navigation and respect for
+            reduced-motion settings. This site is built the same way.
+          </p>
+        </div>
+        <div class="approach-card">
+          <i class="fas fa-people-group" aria-hidden="true"></i>
+          <h3>Plain communication</h3>
+          <p>
+            Years in law and on building sites taught me to scope work properly, explain it
+            without jargon and deliver what was agreed.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="portfolio-container fade-up">
-      <div class="portfolio-title">
-        <h2>Portfolio</h2>
-        <div class="line"></div>
+    <section id="about" class="section fade-up">
+      <div class="aboutme">
+        <div class="aboutme-text">
+          <div class="section-head">
+            <p class="eyebrow">About</p>
+            <h2>Carpenter turned coder</h2>
+          </div>
+
+          <p class="aboutme-blurb">
+            I'm Tim Kelly, a full-stack developer based in Paddington, Brisbane. I hold a Masters in
+            International Law and a Professional Certificate in Full-Stack Engineering.
+          </p>
+
+          <p class="aboutme-blurb">
+            After five years working as a carpenter in Whistler, Canada, I decided I wanted a new
+            challenge and found it in software. Coding feels different from carpentry, but also similar:
+            both are about solving problems in creative ways and making something real, functional and useful.
+          </p>
+
+          <p class="aboutme-blurb">
+            I'm passionate about lifelong learning. I'm fascinated by the mysteries of space, the diversity
+            of the human experience, and living a full life outdoors.
+          </p>
+
+          <ul class="fact-list">
+            <li><i class="fas fa-location-dot" aria-hidden="true"></i> Paddington, Brisbane, Australia</li>
+            <li><i class="fas fa-graduation-cap" aria-hidden="true"></i> Masters in International Law</li>
+            <li><i class="fas fa-certificate" aria-hidden="true"></i> Professional Certificate, Full-Stack Engineer</li>
+          </ul>
+        </div>
+
+        <div class="aboutme-image">
+          <img src="resources/images/head.jpg" alt="Portrait of Tim Kelly" width="300" height="400" loading="lazy" />
+        </div>
       </div>
 
-      <div class="portfolio-projects">
-        <article class="project-card">
-          <h3>Stretch Desk</h3>
-          <p>A workplace-wellness app concept built with responsive layout and clean UI structure. Aim to reduce pain, improve movement
-            and focus, through 4 pillars; stretch, strength, movement and meditation.
-          </p>
-          <a href="https://github.com/teeksONE/stretch-desk" target="_blank" rel="noopener noreferrer">View Project <span class="arrow">&rarr;</span></a>
-        </article>
+      <div class="java-factory">
+        <div class="javaaboutme" role="img" aria-label="Tim Kelly written as a snippet of code: age, location, hobbies, days until 100 and days spent coding.">
+          <div class="code-bar" aria-hidden="true"><span></span><span></span><span></span><em>human.js</em></div>
 
-        <article class="project-card">
-          <h3>Reddit-clone</h3>
-          <p>A Reddit-style project focused on content structure, interaction, and styling practice. With a curated feed,
-            Askme from around the world and a main feed.</p>
-          <a href="https://github.com/teeksONE/sub-creddit-app" target="_blank" rel="noopener noreferrer">View Project <span class="arrow">&rarr;</span></a>
-        </article>
-
-        <article class="project-card">
-          <h3>Sober Mindset</h3>
-          <p>A wellness-based concept / passion project with a simple, focused interface and purposeful content. Aim to supply practical, healthy content
-            for those wanting to let go of unhelpful behaviours.
+          <p>
+            <span class="line-number">1</span>
+            <span class="code">
+              <span class="code-blue">class</span> <span class="code-yellow">Human</span> <span class="code-white">{</span>
+            </span>
           </p>
-          <a href="https://github.com/teeksONE/Sober-Mindset" target="_blank" rel="noopener noreferrer">View Project <span class="arrow">&rarr;</span></a>
-        </article>
 
-        <article class="project-card">
-          <h3>Vanture Campers</h3>
-          <p>My campervan rental company, build designed around branding, layout, and user-friendly flow. My first go at building
-            a fully structured, multi-page website from scratch.
+          <p>
+            <span class="line-number">2</span>
+            <span class="code indent-1">
+              <span class="code-cyan">constructor</span><span class="code-white">(fullStack)</span> <span class="code-purple">{</span>
+            </span>
           </p>
-          <a href="https://github.com/teeksONE/vanture-campers" target="_blank" rel="noopener noreferrer">View Project <span class="arrow">&rarr;</span></a>
-        </article>
+
+          <p>
+            <span class="line-number">3</span>
+            <span class="code indent-2">
+              <span class="code-cyan">_name</span> <span class="code-white">=</span> <span class="code-yellow">'Tim Kelly'</span>;
+            </span>
+          </p>
+
+          <p>
+            <span class="line-number">4</span>
+            <span class="code indent-2">
+              <span class="code-cyan">_age</span> <span class="code-white">=</span> <span class="code-orange" id="age">41</span>;
+            </span>
+          </p>
+
+          <p>
+            <span class="line-number">5</span>
+            <span class="code indent-2">
+              <span class="code-cyan">_location</span> <span class="code-white">=</span> <span class="code-yellow">'Paddington, Brisbane'</span>;
+            </span>
+          </p>
+
+          <p>
+            <span class="line-number">6</span>
+            <span class="code indent-2">
+              <span class="code-cyan">_hobbies</span> <span class="code-white">=</span>
+              <span class="code-purple">[</span>
+              <span class="code-yellow">'Snowboarding', 'Skiing', 'Surfing', 'Photography'</span>
+              <span class="code-purple">]</span>;
+            </span>
+          </p>
+
+          <p>
+            <span class="line-number">7</span>
+            <span class="code indent-2">
+              <span class="code-cyan">_daysUntil100</span> <span class="code-white">=</span> <span class="code-orange" id="days-left"></span>;
+            </span>
+          </p>
+
+          <p>
+            <span class="line-number">8</span>
+            <span class="code indent-2">
+              <span class="code-cyan">_daysCoding</span> <span class="code-white">=</span> <span class="code-orange" id="days-coding"></span>;
+            </span>
+          </p>
+
+          <p>
+            <span class="line-number">9</span>
+            <span class="code indent-1">
+              <span class="code-purple">}</span>
+            </span>
+          </p>
+
+          <p>
+            <span class="line-number">10</span>
+            <span class="code">
+              <span class="code-white">};</span>
+            </span>
+          </p>
+
+        </div>
       </div>
     </section>
 
-    <section id="skills" class="skills-container fade-up">
-      <div class="skills-title">
-        <h2>Skills</h2>
-        <div class="line"></div>
+    <section id="skills" class="section fade-up">
+      <div class="section-head">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I've shipped with</h2>
+        <p class="section-intro">Everything listed here is used in the projects above.</p>
       </div>
 
       <div class="skills-grid">
         <div class="skills-box">
-          <h3>Languages</h3>
-          <div class="line"></div>
-          <div class="icon-row">
-            <i class="fab fa-html5" title="HTML5"></i>
-            <i class="fab fa-css3-alt" title="CSS3"></i>
-            <i class="fab fa-js" title="JavaScript"></i>
-            <span class="text-badge" title="TypeScript">TS</span>
-          </div>
+          <h3><i class="fas fa-display" aria-hidden="true"></i> Front end</h3>
+          <p class="skills-plain">What people see and use</p>
+          <ul class="tech-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>Responsive design</li>
+            <li>Accessibility</li>
+          </ul>
         </div>
 
         <div class="skills-box">
-          <h3>Tools</h3>
-          <div class="line"></div>
-          <div class="icon-row">
-            <i class="fab fa-react" title="React"></i>
-            <i class="fab fa-node-js" title="Node.js"></i>
-            <i class="fab fa-npm" title="npm"></i>
-            <i class="fab fa-git-alt" title="Git"></i>
-            <i class="fab fa-github" title="GitHub"></i>
-            <i class="fas fa-terminal" title="Terminal"></i>
-            <i class="fas fa-code" title="VS Code"></i>
-          </div>
+          <h3><i class="fas fa-server" aria-hidden="true"></i> Back end &amp; data</h3>
+          <p class="skills-plain">The systems behind the screen</p>
+          <ul class="tech-list">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>REST APIs</li>
+            <li>PostgreSQL</li>
+            <li>Supabase</li>
+            <li>Stripe payments</li>
+            <li>Sign-in &amp; two-factor</li>
+            <li>Email &amp; PDF automation</li>
+          </ul>
         </div>
 
         <div class="skills-box">
-          <h3>Learning</h3>
-          <div class="line"></div>
-          <div class="icon-row">
-            <i class="fab fa-rust" title="Rust"></i>
-            <span class="text-badge" title="Tauri">Tauri</span>
-            <span class="text-badge" title="Tailwind CSS">Tailwind</span>
-            <i class="fas fa-database" title="SQL / Databases"></i>
-            <i class="fas fa-plug" title="REST APIs"></i>
-          </div>
+          <h3><i class="fas fa-toolbox" aria-hidden="true"></i> Apps &amp; tooling</h3>
+          <p class="skills-plain">Beyond the browser, and how it ships</p>
+          <ul class="tech-list">
+            <li>Swift &amp; SwiftUI</li>
+            <li>Tauri &amp; Rust</li>
+            <li>Git &amp; GitHub</li>
+            <li>Vite</li>
+            <li>npm</li>
+            <li>Netlify</li>
+            <li>Render</li>
+            <li>Automated testing</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact-section fade-up">
-      <h2>Contact</h2>
-      <div class="line"></div>
-      <p>Interested in working together or just want to connect?</p>
+    <section id="contact" class="section contact-section fade-up">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk</h2>
+      <p class="section-intro">Interested in working together, or just want to connect? Email is the best way to reach me.</p>
+
+      <a class="contact-email" href="mailto:teeksone.bne@gmail.com">teeksone.bne@gmail.com</a>
+
       <div class="contact-buttons">
-        <a class="contact-btn" href="mailto:teeksone.bne@gmail.com">Email Me</a>
-        <button class="contact-btn secondary" data-copy-email="teeksone.bne@gmail.com">Copy Email</button>
+        <a class="btn btn-primary" href="mailto:teeksone.bne@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Email me</a>
+        <button class="btn btn-ghost" type="button" data-copy-email="teeksone.bne@gmail.com"><i class="fas fa-copy" aria-hidden="true"></i> <span data-copy-label>Copy email</span></button>
+        <a class="btn btn-ghost" href="https://github.com/teeksONE" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/tim-kelly-299476282/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
       </div>
+
+      <p class="contact-location"><i class="fas fa-location-dot" aria-hidden="true"></i> Paddington, Brisbane, Australia</p>
+      <p class="sr-only" aria-live="polite" id="copy-status"></p>
     </section>
 
   </main>
 
   <footer class="footer">
-    <p>© 2026 Tim Kelly.</p>
+    <p>© <span id="year">2026</span> Tim Kelly.</p>
+    <p class="footer-links">
+      <a href="mailto:teeksone.bne@gmail.com">teeksone.bne@gmail.com</a>
+      <a href="https://github.com/teeksONE" target="_blank" rel="noopener noreferrer">github.com/teeksONE</a>
+      <a href="#top">Back to top</a>
+    </p>
   </footer>
 
   <script src="resources/js/portfolio.js"></script>
